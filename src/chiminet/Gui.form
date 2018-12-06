@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="Trabajador" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                              <Component id="Lab_Fecha" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="Lab_Recargas" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="Lab_Internacional" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="Lab_Fotocopias" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="Lab_ImpresionesBN" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="Lab_Scanner" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="Date" min="-2" pref="100" max="-2" attributes="0"/>
+                          <Component id="RecargasFinal" max="32767" attributes="0"/>
+                          <Component id="InternacionalFinal" max="32767" attributes="0"/>
+                          <Component id="FotocopiasFinal" alignment="0" max="32767" attributes="0"/>
+                          <Component id="ImpresionesBnFinal" max="32767" attributes="0"/>
+                          <Component id="ScannerFinal" max="32767" attributes="0"/>
+                          <Component id="InternetFinal" pref="135" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                      <Component id="Listar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="GuardarFinal" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Lab_internet" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="RecargasInicial" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="Lab_baseInicial" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
+                              <Component id="Lab_baseFinal" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="InternacionalInicial" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="FotocopiasInicial" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="ImpresionesBnInicial" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace pref="85" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lab_TrabTurno" min="-2" max="-2" attributes="0"/>
+                  <Component id="lab_ImpColor" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="jScrollPane1" pref="275" max="32767" attributes="0"/>
+                  <Component id="jScrollPane2" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="Trabajador" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Lab_Fecha" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Date" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="Lab_baseInicial" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Lab_baseFinal" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="Lab_Recargas" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="RecargasFinal" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="RecargasInicial" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="Lab_Internacional" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="InternacionalFinal" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="InternacionalInicial" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="Lab_Fotocopias" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="FotocopiasFinal" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="FotocopiasInicial" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="Lab_ImpresionesBN" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ImpresionesBnFinal" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ImpresionesBnInicial" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="Lab_Scanner" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ScannerFinal" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="Lab_internet" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="InternetFinal" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="136" max="-2" attributes="0"/>
+                              <Component id="lab_TrabTurno" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                              <Component id="jScrollPane2" min="-2" pref="39" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="41" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="GuardarFinal" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Listar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="lab_ImpColor" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JComboBox" name="Trabajador">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="3">
+            <StringItem index="0" value="Seleccione El Trabajador"/>
+            <StringItem index="1" value="Daniel"/>
+            <StringItem index="2" value="Linda"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Lab_Fecha">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fecha :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Date">
+      <Properties>
+        <Property name="text" type="java.lang.String" value=" "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Lab_Recargas">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Recargas Celular"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="RecargasFinal">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RecargasFinalActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Lab_Internacional">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Internacional"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="InternacionalFinal">
+    </Component>
+    <Component class="javax.swing.JLabel" name="Lab_baseInicial">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Base Inicial"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Lab_baseFinal">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Base Final"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Lab_Fotocopias">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fotocopias"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="FotocopiasFinal">
+    </Component>
+    <Component class="javax.swing.JLabel" name="Lab_ImpresionesBN">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Impresiones B/N"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="ImpresionesBnFinal">
+    </Component>
+    <Component class="javax.swing.JLabel" name="Lab_Scanner">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Scanner"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="ScannerFinal">
+    </Component>
+    <Component class="javax.swing.JLabel" name="Lab_internet">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Internet"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="InternetFinal">
+    </Component>
+    <Component class="javax.swing.JButton" name="GuardarFinal">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Guardar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GuardarFinalActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lab_ImpColor">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Impresiones Color"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="ImpreColorFinal">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="lab_TrabTurno">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Trabajos Turno"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="TrabTurno">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="RecargasInicial">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="InternacionalInicial">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabel2"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="FotocopiasInicial">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabel3"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="ImpresionesBnInicial">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabel4"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Conexion"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Listar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Listar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ListarActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
