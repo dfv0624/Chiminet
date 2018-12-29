@@ -48,6 +48,8 @@ public class Gui extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jPanel1 = new javax.swing.JPanel();
         Trabajador = new javax.swing.JComboBox<>();
         Lab_Fecha = new javax.swing.JLabel();
         Date = new javax.swing.JLabel();
@@ -78,6 +80,14 @@ public class Gui extends javax.swing.JFrame {
         ImpresionesBnInicial = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         Listar = new javax.swing.JButton();
+        Lab_observaciones = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        Observaciones = new javax.swing.JTextArea();
+        Lab_Egresos = new javax.swing.JLabel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        Egresos = new javax.swing.JTextArea();
+        Lab_Efectivo = new javax.swing.JLabel();
+        TotalEfectivo = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -150,136 +160,220 @@ public class Gui extends javax.swing.JFrame {
             }
         });
 
+        Lab_observaciones.setText("Observaciones");
+
+        Observaciones.setColumns(20);
+        Observaciones.setRows(5);
+        jScrollPane3.setViewportView(Observaciones);
+
+        Lab_Egresos.setText("Egresos");
+
+        Egresos.setColumns(20);
+        Egresos.setRows(5);
+        jScrollPane4.setViewportView(Egresos);
+
+        Lab_Efectivo.setText("Total Efectivo");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Trabajador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(Lab_Recargas, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(44, 44, 44)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(RecargasInicial)
+                            .addComponent(Lab_baseInicial)
+                            .addComponent(InternacionalInicial)
+                            .addComponent(FotocopiasInicial)
+                            .addComponent(ImpresionesBnInicial))))
+                .addGap(53, 53, 53)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(Lab_Fecha)
+                        .addGap(18, 18, 18)
+                        .addComponent(Date, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(RecargasFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Lab_baseFinal)
+                    .addComponent(InternacionalFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(FotocopiasFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ImpresionesBnFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ScannerFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(InternetFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(49, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Lab_Internacional)
+                            .addComponent(Lab_Fotocopias)
+                            .addComponent(Lab_ImpresionesBN)
+                            .addComponent(Lab_Scanner)
+                            .addComponent(Lab_internet)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lab_TrabTurno)
+                                    .addComponent(Lab_observaciones))
+                                .addGap(61, 61, 61)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jScrollPane2)
+                                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addComponent(Lab_Egresos)
+                                        .addGap(86, 86, 86))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(Lab_Efectivo)
+                                        .addGap(58, 58, 58)))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jScrollPane4)
+                                    .addComponent(TotalEfectivo, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(lab_ImpColor)
+                                .addGap(48, 48, 48)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGap(37, 37, 37)
+                            .addComponent(Listar)
+                            .addGap(51, 51, 51)
+                            .addComponent(GuardarFinal)
+                            .addGap(69, 69, 69)
+                            .addComponent(jButton1)))
+                    .addContainerGap(30, Short.MAX_VALUE)))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Date)
+                    .addComponent(Lab_Fecha)
+                    .addComponent(Trabajador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Lab_baseInicial)
+                    .addComponent(Lab_baseFinal))
+                .addGap(12, 12, 12)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Lab_Recargas)
+                    .addComponent(RecargasFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(RecargasInicial))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(InternacionalFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(InternacionalInicial))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(FotocopiasFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(FotocopiasInicial))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ImpresionesBnFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ImpresionesBnInicial))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(ScannerFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(InternetFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(711, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(115, 115, 115)
+                    .addComponent(Lab_Internacional)
+                    .addGap(24, 24, 24)
+                    .addComponent(Lab_Fotocopias)
+                    .addGap(24, 24, 24)
+                    .addComponent(Lab_ImpresionesBN)
+                    .addGap(24, 24, 24)
+                    .addComponent(Lab_Scanner)
+                    .addGap(24, 24, 24)
+                    .addComponent(Lab_internet)
+                    .addGap(56, 56, 56)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(lab_ImpColor)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(27, 27, 27)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGap(13, 13, 13)
+                            .addComponent(lab_TrabTurno))
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGap(41, 41, 41)
+                            .addComponent(Lab_observaciones)
+                            .addGap(86, 86, 86))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGap(20, 20, 20)
+                            .addComponent(Lab_Egresos))
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(61, 61, 61)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(Lab_Efectivo)
+                        .addComponent(TotalEfectivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 136, Short.MAX_VALUE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(Listar)
+                        .addComponent(GuardarFinal)
+                        .addComponent(jButton1))
+                    .addContainerGap()))
+        );
+
+        jScrollPane5.setViewportView(jPanel1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(Trabajador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(48, 48, 48)
-                                .addComponent(Lab_Fecha))
-                            .addComponent(Lab_Recargas)
-                            .addComponent(Lab_Internacional)
-                            .addComponent(Lab_Fotocopias)
-                            .addComponent(Lab_ImpresionesBN)
-                            .addComponent(Lab_Scanner))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(Date, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(RecargasFinal)
-                            .addComponent(InternacionalFinal)
-                            .addComponent(FotocopiasFinal)
-                            .addComponent(ImpresionesBnFinal)
-                            .addComponent(ScannerFinal)
-                            .addComponent(InternetFinal, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(53, 53, 53)
-                        .addComponent(Listar)
-                        .addGap(50, 50, 50)
-                        .addComponent(GuardarFinal)
-                        .addGap(72, 72, 72)
-                        .addComponent(jButton1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Lab_internet)
-                        .addGap(94, 94, 94)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(RecargasInicial)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(Lab_baseInicial)
-                                .addGap(93, 93, 93)
-                                .addComponent(Lab_baseFinal))
-                            .addComponent(InternacionalInicial)
-                            .addComponent(FotocopiasInicial)
-                            .addComponent(ImpresionesBnInicial))))
-                .addContainerGap(85, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lab_TrabTurno)
-                    .addComponent(lab_ImpColor))
-                .addGap(48, 48, 48)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 275, Short.MAX_VALUE)
-                    .addComponent(jScrollPane2))
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Trabajador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Lab_Fecha)
-                    .addComponent(Date))
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Lab_baseInicial)
-                    .addComponent(Lab_baseFinal))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Lab_Recargas)
-                    .addComponent(RecargasFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(RecargasInicial))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Lab_Internacional)
-                    .addComponent(InternacionalFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(InternacionalInicial))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Lab_Fotocopias)
-                    .addComponent(FotocopiasFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(FotocopiasInicial))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Lab_ImpresionesBN)
-                    .addComponent(ImpresionesBnFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ImpresionesBnInicial))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Lab_Scanner)
-                    .addComponent(ScannerFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Lab_internet)
-                    .addComponent(InternetFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(53, 53, 53)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(136, 136, 136)
-                                .addComponent(lab_TrabTurno))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(27, 27, 27)
-                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(GuardarFinal)
-                            .addComponent(jButton1)
-                            .addComponent(Listar)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lab_ImpColor)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+            .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 992, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void RecargasFinalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RecargasFinalActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_RecargasFinalActionPerformed
+    private void ListarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ListarActionPerformed
+        ConexionMySQL mySQL = new ConexionMySQL();
+        Connection Cn = mySQL.Conectar();
+        String Recargas,Internacional,fotocopias, ImpresionesBN;
+
+        String Sql = "";
+
+        try {
+            Sql="SELECT Recargas,Internacional,fotocopias, ImpresionesBN FROM CuadreCaja WHERE Id=1";
+            java.sql.Statement st = Cn.createStatement();
+            ResultSet rs = st.executeQuery(Sql);
+            if(rs.first()){
+                this.RecargasInicial.setText(rs.getString("Recargas"));  //campo 1 de la tabla personas
+                this.InternacionalInicial.setText(rs.getString("Internacional"));      //campo 2 de la tabla personas
+                this.FotocopiasInicial.setText(rs.getString("fotocopias"));
+                this.ImpresionesBnInicial.setText(rs.getString("ImpresionesBN"));
+            }
+        } catch(SQLException e) {
+            JOptionPane.showMessageDialog(null, "Error al realizar la consulta");
+            e.printStackTrace();
+        }
+
+    }//GEN-LAST:event_ListarActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
- ConexionMySQL mysql = new ConexionMySQL();
+        ConexionMySQL mysql = new ConexionMySQL();
         Connection cn = mysql.Conectar();
         JOptionPane.showMessageDialog(null, "Conexion Exitosa");        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -288,7 +382,7 @@ public class Gui extends javax.swing.JFrame {
         ConexionMySQL mySQL = new ConexionMySQL();
         Connection Cn = mySQL.Conectar();
         String Trabajador,Fecha,Recargas,Internacional,fotocopias, ImpresionesBN,Scanner,internet,ImpresionesColor,TrabajosTurno;
-        
+
         String Sql = "";
         String Mensaje = "";
         //Cargamos Las Variables con un valor de los controles de la gui.
@@ -297,7 +391,7 @@ public class Gui extends javax.swing.JFrame {
         //////
         String date = "'"+Fecha+"'";
         System.out.println(date);
-        
+
         Recargas = this.RecargasFinal.getText();
         Internacional = this.InternacionalFinal.getText();
         fotocopias = this.FotocopiasFinal.getText();
@@ -306,63 +400,38 @@ public class Gui extends javax.swing.JFrame {
         internet = this.InternetFinal.getText();
         ImpresionesColor = this.ImpreColorFinal.getText();
         TrabajosTurno = this.TrabTurno.getText();
-        
+
         Sql = "INSERT INTO CuadreCaja(Trabajador,Fecha,Recargas,Internacional,fotocopias, ImpresionesBN,Scanner,internet,ImpresionesColor,TrabTurno) VALUES (?,?,?,?,?,?,?,?,?,?)";
         //colocamos la variable mensaje asumiendo qu ele registro se inserto en la tabla
         Mensaje = "Registro Insertado Con Exito";
         try
         {
-         PreparedStatement Pst=Cn.prepareStatement(Sql);
-        
-         Pst.setString(1,Trabajador);
-         Pst.setString(2,date);
-         Pst.setString(3,Recargas);
-         Pst.setString(4,Internacional);
-         Pst.setString(5,fotocopias);
-         Pst.setString(6,ImpresionesBN);
-         Pst.setString(7,Scanner);
-         Pst.setString(8,internet);
-         Pst.setString(9,ImpresionesColor);
-         Pst.setString(10,TrabajosTurno);
-         
-         
-         int N=Pst.executeUpdate();
-         if(N>0)
-         {
-         JOptionPane.showMessageDialog(null, Mensaje);
-         }
+            PreparedStatement Pst=Cn.prepareStatement(Sql);
+
+            Pst.setString(1,Trabajador);
+            Pst.setString(2,date);
+            Pst.setString(3,Recargas);
+            Pst.setString(4,Internacional);
+            Pst.setString(5,fotocopias);
+            Pst.setString(6,ImpresionesBN);
+            Pst.setString(7,Scanner);
+            Pst.setString(8,internet);
+            Pst.setString(9,ImpresionesColor);
+            Pst.setString(10,TrabajosTurno);
+
+            int N=Pst.executeUpdate();
+            if(N>0)
+            {
+                JOptionPane.showMessageDialog(null, Mensaje);
+            }
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(null, ex);
         }
     }//GEN-LAST:event_GuardarFinalActionPerformed
 
-    private void ListarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ListarActionPerformed
-     ConexionMySQL mySQL = new ConexionMySQL();
-        Connection Cn = mySQL.Conectar();
-        String Recargas,Internacional,fotocopias, ImpresionesBN;
-        
-        String Sql = "";
-
-     
-        try {
-      Sql="SELECT Recargas,Internacional,fotocopias, ImpresionesBN FROM CuadreCaja WHERE Id=1";
-     java.sql.Statement st = Cn.createStatement();
-     ResultSet rs = st.executeQuery(Sql);
-      if(rs.first()){
-       this.RecargasInicial.setText(rs.getString("Recargas"));  //campo 1 de la tabla personas
-       this.InternacionalInicial.setText(rs.getString("Internacional"));      //campo 2 de la tabla personas
-       this.FotocopiasInicial.setText(rs.getString("fotocopias"));  
-       this.ImpresionesBnInicial.setText(rs.getString("ImpresionesBN")); 
-      }
-   } catch(SQLException e) {
-      JOptionPane.showMessageDialog(null, "Error al realizar la consulta");
-       e.printStackTrace();
-} 
-  
-        
-        
-        
-    }//GEN-LAST:event_ListarActionPerformed
+    private void RecargasFinalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RecargasFinalActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RecargasFinalActionPerformed
 
     /**
      * @param args the command line arguments
@@ -401,6 +470,7 @@ public class Gui extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Date;
+    private javax.swing.JTextArea Egresos;
     private javax.swing.JTextField FotocopiasFinal;
     private javax.swing.JLabel FotocopiasInicial;
     private javax.swing.JButton GuardarFinal;
@@ -410,6 +480,8 @@ public class Gui extends javax.swing.JFrame {
     private javax.swing.JTextField InternacionalFinal;
     private javax.swing.JLabel InternacionalInicial;
     private javax.swing.JTextField InternetFinal;
+    private javax.swing.JLabel Lab_Efectivo;
+    private javax.swing.JLabel Lab_Egresos;
     private javax.swing.JLabel Lab_Fecha;
     private javax.swing.JLabel Lab_Fotocopias;
     private javax.swing.JLabel Lab_ImpresionesBN;
@@ -419,15 +491,22 @@ public class Gui extends javax.swing.JFrame {
     private javax.swing.JLabel Lab_baseFinal;
     private javax.swing.JLabel Lab_baseInicial;
     private javax.swing.JLabel Lab_internet;
+    private javax.swing.JLabel Lab_observaciones;
     private javax.swing.JButton Listar;
+    private javax.swing.JTextArea Observaciones;
     private javax.swing.JTextField RecargasFinal;
     private javax.swing.JLabel RecargasInicial;
     private javax.swing.JTextField ScannerFinal;
+    private javax.swing.JTextField TotalEfectivo;
     private javax.swing.JTextArea TrabTurno;
     private javax.swing.JComboBox<String> Trabajador;
     private javax.swing.JButton jButton1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JLabel lab_ImpColor;
     private javax.swing.JLabel lab_TrabTurno;
     // End of variables declaration//GEN-END:variables
